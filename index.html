@@ -16,7 +16,27 @@
       color: transparent;
       animation: gradientShift 8s linear infinite;
     }
-
+    .cadeaux-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les photos */
+      gap: 20px; /* Espacement entre les éléments */
+      margin-top: 20px;
+    }
+    
+    .cadeau-item {
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .cadeau-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }
       100% { background-position: 100% 50%; }
@@ -87,8 +107,28 @@
     </section>
 
     <section id="liste-cadeaux">
-      <h2>Liste de mariage / Cagnotte</h2>
+      <h2>Liste de mariage</h2>
       <p><a href="#">Lien vers notre cagnotte à venir</a></p>
+    
+      <h3>Idées de cadeaux</h3>
+      <div class="cadeaux-grid">
+        <div class="cadeau-item">
+          <img src="images/costa_rica.png" alt="Voyage de noce" />
+          <p>A la découverte de l'Amazonie</p>
+        </div>
+        <div class="cadeau-item">
+          <img src="images/staub.jpg" alt="Marmittes" />
+          <p>Pour faire des bons plats</p>
+        </div>
+        <div class="cadeau-item">
+          <img src="images/tapis_moldave.png" alt="Tapis Moldave" />
+          <p>Pour décorer notre futur chez nous</p>
+        </div>
+        <div class="cadeau-item">
+          <img src="images/voiture.jpg" alt="Voiture" />
+          <p>Pour notre première voiture</p>
+        </div>
+      </div>
     </section>
   </main>
 
